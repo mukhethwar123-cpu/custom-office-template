@@ -1,6 +1,6 @@
 Urban Threads boutique
 Urban-threads-boutique Website
- Project Overview Urban Threads Boutique is a multi-page website created as part of my web development coursework at SEBANCOLLEGE.
+ Project Overview Urban Threads Boutique 
 The project showcases a fictional fashion brand specializing in clothing design, consultation, and seasonal collections.
 
 Features
