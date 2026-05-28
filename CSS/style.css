@@ -1,0 +1,259 @@
+/* Urban Threads Boutique - Feminine, modern styling */
+
+:root{
+  --bg: #fff7fb;
+  --card: #ffffff;
+  --text: #2b1b2f;
+  --muted: #6b5a6f;
+  --primary: #d81b60;      /* rose */
+  --primary2: #8e24aa;     /* purple */
+  --accent: #ff4081;
+  --border: rgba(216, 27, 96, 0.18);
+  --shadow: 0 10px 30px rgba(216, 27, 96, 0.12);
+}
+
+*{ box-sizing: border-box; }
+
+body{
+  margin:0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(900px 350px at 10% 0%, rgba(216,27,96,0.15), transparent 60%),
+    radial-gradient(800px 300px at 90% 10%, rgba(142,36,170,0.12), transparent 55%),
+    linear-gradient(180deg, #fff, var(--bg));
+  text-align:center;
+}
+
+a{ color: var(--primary); text-decoration: none; }
+a:hover{ text-decoration: underline; }
+
+header, main, footer{ padding: 16px; }
+
+.container{
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Hero */
+img{ max-width: 100%; height: auto; }
+
+/* Index background image */
+.page-bg{
+  position: fixed;
+  inset: 0;
+  background-image: url("../assests/backgroung pic 3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.35;
+  z-index: -1;
+}
+
+/* Index video */
+section.video video{
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  display:block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+
+
+@media (max-width: 600px){
+  section.video video{
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.page-bg{
+  position: fixed;
+  inset: 0;
+  background-image: url("../assests/backgroung pic 3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.35;
+  z-index: -1;
+}
+
+.page-content{
+  position: relative;
+  z-index: 1;
+}
+
+
+/* Nav */
+ul{ padding-left: 0; margin: 0; }
+
+nav ul{
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+nav li{ margin:0; }
+
+nav a{
+  display:inline-block;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.7);
+  box-shadow: 0 6px 18px rgba(216,27,96,0.06);
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+
+nav a:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(216,27,96,0.12);
+  border-color: rgba(216,27,96,0.35);
+  text-decoration: none;
+}
+
+/* Cards */
+section{
+  margin: 16px 0;
+  background: rgba(255,255,255,0.75);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: var(--shadow);
+}
+
+h1{
+  margin-top: 14px;
+  font-size: 2rem;
+  letter-spacing: 0.2px;
+}
+
+h2{
+  color: var(--primary);
+  margin-top: 18px;
+}
+
+p{ line-height: 1.6; }
+
+hr{
+  border: none;
+  border-top: 1px solid rgba(216,27,96,0.18);
+  margin: 18px 0;
+}
+
+/* Product list */
+ul.products-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  justify-items: center;
+}
+
+ul.products-list > li{
+  margin: 0;
+  width: 100%;
+}
+
+/* When product lists are not using .products-list */
+li{ margin: 8px 0; }
+
+
+ul li img{
+  border-radius: 12px;
+  border: 1px solid rgba(216,27,96,0.18);
+}
+
+/* Social footer */
+footer, .social{ } 
+footer{ text-align:center; }
+footer .footer-content{ text-align:center; }
+
+.social{
+  margin: 10px 0 4px;
+  padding: 12px;
+  border-radius: 14px;
+  background: rgba(216,27,96,0.06);
+  border: 1px solid rgba(216,27,96,0.15);
+}
+
+.social h4{
+  margin: 0 0 8px;
+  color: var(--primary);
+}
+
+.social-links{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.social-links a{
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(216,27,96,0.2);
+  background: rgba(255,255,255,0.85);
+}
+
+.social-links a:hover{ text-decoration:none; background: rgba(216,27,96,0.09); }
+
+/* Forms */
+input, textarea, button{
+  font: inherit;
+}
+
+input, textarea{
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(216,27,96,0.25);
+  background: rgba(255,255,255,0.9);
+  margin-top: 6px;
+  margin-bottom: 10px;
+}
+
+button, input[type="submit"]{
+  border: none;
+  padding: 10px 16px;
+  border-radius: 999px;
+  color: white;
+  background: linear-gradient(135deg, var(--primary), var(--primary2));
+  cursor: pointer;
+  box-shadow: 0 12px 26px rgba(216,27,96,0.2);
+}
+
+button:hover, input[type="submit"]:hover{
+  filter: brightness(1.03);
+}
+
+/* Product page helpers */
+html{ scroll-behavior: smooth; }
+
+.jump-to-enquiry{
+  display:inline-block;
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(216,27,96,0.25);
+  background: rgba(255,255,255,0.85);
+}
+
+.jump-to-enquiry:hover{
+  text-decoration:none;
+  background: rgba(216,27,96,0.09);
+}
+
+/* Responsive */
+@media (max-width: 600px){
+  h1{ font-size: 1.5rem; }
+  nav a{ padding: 9px 12px; }
+}
+
+
